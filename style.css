@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+/* TOPO DO SITE */
+
+#nomeSite {
+    margin-top: 60px;
+    margin-left: 20px;
+    display: block;
+    font-family: 'Poppins';
+    color: black;
+    float: left;
+
+}
+
+#logo {
+    display: block;
+    width: 100px;
+    padding-top: 30px;
+    margin-left: 0%;
+    float: left;
+}
+
+#head {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#topo {
+    background-color: rgb(105, 156, 238);
+    justify-content: space-between;
+    width: 100%;
+    height: 150px;
+    padding: 0;
+}
+
+#topo ul {
+    margin: 0;
+    padding: 0;
+}
+
+#topo ul li {
+    font-family: 'Poppins';
+    font-size: 20px;
+    display: block;
+    margin-right: 70px;
+    margin-top: 80px;
+    padding: 0;
+    float: right;
+}
+
+#topo a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+#topo a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/* Corpo do site */
+
+#corpo{
+    margin: 4%;
+    width: 90%;
+}
+
+.text{
+    font-family: 'Poppins';
+    width: 600px;
+}
+
+#quemSomos{
+    display: block;
+    float: left;
+    width: 250px;
+}
