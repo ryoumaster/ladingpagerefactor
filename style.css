@@ -38,7 +38,7 @@ body{
 #topo {
     margin: auto;
     background-color: black;
-    width: 100%;
+    width: 1000px;
     height: 150px;
     padding: 0;
 }
@@ -83,7 +83,7 @@ section{
 #conteudo{
     display: block;
     margin: auto;
-    width: 65%;
+    width: 1000px;
     padding: 2%;
     background-color: white;
     border-radius: 2%;
@@ -231,6 +231,7 @@ h3{
 }
 
 .textRodape{
+    width: 1000px;
     font-family: 'Poppins';
     margin: auto;
     text-align: center;
