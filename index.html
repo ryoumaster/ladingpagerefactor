@@ -5,118 +5,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="/node_modules/normalize.css/normalize.css">
-    <title>Document</title>
+    <title>Barber</title>
 </head>
 <body>
     <header id="head">
-        <div id="topo">
+        <div id="topoLogo">
             <picture>
                 <img id="logo" src="IMAGENS/barbeiro.png">
             </picture>
             <h1 id="nomeSite"><a href="#">Barber</a></h1>
-            
+        </div>
+        <div id="topoLinks">   
             <ul>
-                <li>
-                    <a href="#">Produtos</a>
-                    <a href="#">Saiba Mais</a>
-                    <a href="faleConosco.html">Fale Conosco</a>
-                </li>
+                <li><a href="./agendamentos.html">Agendamentos</a></li>
+                <li><a href="#">Saiba Mais</a></li>
+                <li><a href="faleConosco.html">Fale Conosco</a></li>
             </ul>
+        </div>
+
+        <div class="toggle">
+            <button class="menu-toggle" onclick=showMenu()>&#9776</button>
         </div>
     </header>
 
-    <main id="corpo">
-        <div id="conteudo">
-            <section id="sobre">
-            <article id="salao">
-                <picture>
-                    <img id="quemSomos" src="IMAGENS/barber-styling-client-beard-no-salao-de-barbearia_82574-10528-removebg-preview.png">
-                </picture>
-                <div id="caixaTexto"><h2 class="title">Quem somos</h2>
-                <p class="text">Bem-vindo à Barber, uma barbearia inovadora no ramo. 
-                    Desde 2010, estamos criando tendências ao unir o clássico ao moderno, 
-                    tornando-nos referência no assunto. Nossa missão é oferecer serviços 
-                    de alta qualidade, tornando cada visita um momento especial.
-                </p>
-                </div>
-            </article>
-            </section>
+    <div class="toggle-Links">   
+        <ul>
+            <li><a href="./agendamentos.html">Agendamentos</a></li>
+            <li><a href="#">Saiba Mais</a></li>
+            <li><a href="faleConosco.html">Fale Conosco</a></li>
+        </ul>
+    </div>
 
-            <section class="produtos" id="prodServ">
-                <article class="produtos">
-                    <picture>
-                        <img id="logoProdutos" src="IMAGENS/icone-de-loja-de-barbeiro-profissional_24877-14067-removebg-preview.png">
-                    </picture>
-                    <div id="caixaTexto"><h2 class="title">Produtos e Serviços</h2>
-                    <p class="text"><b>Cortes de Cabelo:</b> Do clássico ao moderno,nossos barbeiros são
-                         especialistas em diversos estilos.</br>
-                    <b>Barbas e Bigodes:</b> Desde a modelagem até o tratamento completo, 
-                        cuidamos da sua barba com produtos de alta qualidade.</br>
-                    <b>Cuidados Faciais:</b> Tratamentos especiais para manter sua pele saudável
-                         e bem cuidada.</br>
-                    <a href="#"><b>Saiba Mais</b></a></p>
-                    </div>
-                </article>
-            </section>
 
-            <section id="secProfissionais">
-                <article>
-                    <picture>
-                        <img id="logoProfissionais" src="IMAGENS/profissionais-removebg-preview.png">
-                    </picture>
-                    <div id="caixaTexto"><h2 class="title">Profissionais</h2>
-                    <p class="text">Nossa equipe é composta por barbeiros altamente qualificados e apaixonados pelo que fazem. 
-                    Cada membro do time é selecionado por sua habilidade técnica, criatividade e dedicação ao cliente.</p>
-                    </div>
-                </article>
-            </section>
 
-            <div id="nossosProfissionais">
-                <h2>Nossos Profissionais</h2>
-            </div>
 
-            <div id="descrProfisionais1">
-                <picture>
-                    <img id="fotopessoa" src="IMAGENS/feliz-bonito-mulher-jovem-posar-camera-em-parque-cidade_1262-19158.jpg">
-                </picture>
-                <div class="textopessoa">
-                    <h3 class="text">CLARA</h3>
-                    <p>Clara Silva é uma cabeleireira criativa especializada em cortes modernos e coloração, com 5 anos de experiência.</p>
-                </div>
-            </div>
+<main>
 
-            <div id="descrProfisionais2">
-                <picture>
-                    <img id="fotopessoa" src="IMAGENS/pessoa2.jpg">
-                </picture>
-                <div class="textopessoa">
-                    <h3 class="text">RODRIGO</h3>
-                    <p>Rodrigo Almeida é um cabeleireiro talentoso especializado em tratamentos capilares, com 7 anos de experiência.</p>
-                </div>
-            </div>
+    <div class="conteudo1">
 
-            <div id="descrProfisionais2">
-                <picture>
-                    <img id="fotopessoa" src="IMAGENS/pessoa 3.jpg">
-                </picture>
-                <div class="textopessoa">
-                    <h3 class="text">ANA</h3>
-                    <p>Ana Costa é uma cabeleireira experiente especializada em cortes clássicos e styling, com 5 anos de experiência.</p>
-                </div>
-            </div>
-                
+        <div class="texto_quemSomos">
+            <h2 class="title">Quem somos</h2>
+            <p class="text">Bem-vindo à Barber, uma barbearia inovadora no ramo. 
+                Desde 2010, estamos criando tendências ao unir o clássico ao moderno, 
+                tornando-nos referência no assunto. Nossa missão é oferecer serviços 
+                de alta qualidade, tornando cada visita um momento especial.
+            </p>
         </div>
-    </main>
+
+        <div class="img-quemSomos">
+            <img class="quemSomos" src="IMAGENS/barber-styling-client-beard-no-salao-de-barbearia_82574-10528-removebg-preview.png">
+        </div>
+        
+    </div>
+
+
+    <div class="conteudo2">
+        <div id="profissionais">
+            <h2 class="title2">Nossos profissionais</h2>
+            <p class="text2">
+                Nossa equipe é composta por barbeiros altamente qualificados e apaixonados pelo que fazem. 
+                    Cada membro do time é selecionado por sua habilidade técnica, criatividade e dedicação ao cliente.
+            </p>
+        </div>
+
+
+        <div class="caroussel">
+            <div class="anterior">
+            <button class="botao-caroussel anterior" onclick="proximo(-1)"><img src="./IMAGENS/proximo-botao.png"/></button>
+            </div>
+            <div class="profissionais">
+                <div class="slides fade descrProfisionais2">
+                    <picture>
+                        <img class="fotopessoa" src="IMAGENS/feliz-bonito-mulher-jovem-posar-camera-em-parque-cidade_1262-19158.jpg">
+                    </picture>
+                    <div class="textopessoa">
+                        <h3 class="text">CLARA</h3>
+                        <p>Clara Silva é uma cabeleireira criativa especializada em cortes modernos e coloração, com 5 anos de experiência.</p>
+                    </div>
+                </div>
+
+                <div class="slides fade descrProfisionais2">
+                    <picture>
+                        <img class="fotopessoa" src="IMAGENS/pessoa2.jpg">
+                    </picture>
+                    <div class="textopessoa">
+                        <h3 class="text">RODRIGO</h3>
+                        <p>Rodrigo Almeida é um cabeleireiro talentoso especializado em tratamentos capilares, com 7 anos de experiência.</p>
+                    </div>
+                </div>
+
+                <div class="slides fade descrProfisionais2">
+                    <picture>
+                        <img class="fotopessoa" src="IMAGENS/pessoa 3.jpg">
+                    </picture>
+                    <div class="textopessoa">
+                        <h3 class="text">ANA</h3>
+                        <p>Ana Costa é uma cabeleireira experiente especializada em cortes clássicos e styling, com 5 anos de experiência.</p>
+                    </div>
+                </div>
+                    
+            </div>
+            <div class="proximo">
+            <button class="botao-caroussel proximo" onclick="proximo(1)"><img src="./IMAGENS/proximo-botao.png"/></button>
+            </div>
+        </div>
+    </div>
+
+</main>
 
     <footer id="rodape">
         <p class="textRodape"><a href="index.html">Barber</a>
-            <a href="#">Produtos</a>
+            <a href="./agendamentos.html">Agendamentos</a>
             <a href="#">Saiba Mais</a>
             <a href="faleConosco.html">Fale Conosco</a>
         </p>
         <p id="fim">2024 - Barber - Todos os direitos reservados&COPY;</p>
     </footer>
     
+
+    <script src="./script.js"></script>
 </body>
 </html>

@@ -5,36 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="/node_modules/normalize.css/normalize.css">
-    <title>Document</title>
+    <title>Fale Conosco</title>
 </head>
 <body>
     <header id="head">
-        <div id="topo">
+        <div id="topoLogo">
             <picture>
                 <img id="logo" src="IMAGENS/barbeiro.png">
             </picture>
-            <h1 id="nomeSite"><a href="index.html">Barber</a></h1>
-            
+            <h1 id="nomeSite"><a href="./index.html">Barber</a></h1>
+        </div>
+        <div id="topoLinks">   
             <ul>
-                <li>
-                    <a href="#">Produtos</a>
-                    <a href="#">Saiba Mais</a>
-                    <a href="#">Fale Conosco</a>
-                </li>
+                <li><a href="./agendamentos.html">Agendamentos</a></li>
+                <li><a href="#">Saiba Mais</a></li>
+                <li><a href="faleConosco.html">Fale Conosco</a></li>
             </ul>
+        </div>
+
+        <div class="toggle">
+            <button class="menu-toggle" onclick=showMenu()>&#9776</button>
         </div>
     </header>
 
-    <main id="corpoFaleConosco">
-        <div id="faleconoscotext">
-            <h2>FALE CONOSCO</h2>
-            <p>Queremos ouvir você! Se tiver alguma dúvida, sugestão ou simplesmente 
-                desejar entrar em contato, estamos à disposição. Preencha o formulário
-                abaixo ou envie um e-mail para contato@barber.com. Responderemos o 
-                mais breve possível!</p>
-        </div>
-        <form>
+    <div class="toggle-Links">   
+        <ul>
+            <li><a href="./agendamentos.html">Agendamentos</a></li>
+            <li><a href="#">Saiba Mais</a></li>
+            <li><a href="faleConosco.html">Fale Conosco</a></li>
+        </ul>
+    </div>
+
+
+
+    <main>
+        <div class="faleConosco">
+
+            <div>
+                <h2 id="title-faleconosco">FALE CONOSCO</h2>
+                <p class="fale-text">Queremos ouvir você! Se tiver alguma dúvida, sugestão ou simplesmente 
+                    desejar entrar em contato, estamos à disposição. Preencha o formulário
+                    abaixo ou envie um e-mail para contato@barber.com. Responderemos o 
+                    mais breve possível!</p>
+            </div>
+
+
             <div class="formulario" id="formnome">
                 <label for="nome">NOME:</label>
                 <input type="text" id="nome" placeholder="Seu nome aqui:">
@@ -53,16 +68,21 @@
             <button id="botao" onclick="confirmacao()" type="submit">Enviar</button>
         </form>
 
+
         <div id="imagemFim">
             <picture>
                 <img src="IMAGENS/fale_conosco-removebg-preview.png" id="imgFaleconosco">
             </picture>
         </div>
+
+
+        </div>
+
     </main>
 
     <footer id="rodape">
         <p class="textRodape"><a href="index.html">Barber</a>
-            <a href="#">Produtos</a>
+            <a href="./agendamentos.html">Agendamentos</a>
             <a href="#">Saiba Mais</a>
             <a href="faleConosco.html">Fale Conosco</a>
         </p>
@@ -70,7 +90,7 @@
     </footer>
 
 
-    <script>
+    <script src="./script.js">
         function confirmacao (){
             alert("Obrigado por nos contatar. Sua mensagem foi enviada!!");
         }

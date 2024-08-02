@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <title>Agendamentos</title>
+</head>
+
+<body>
+
+    <header id="head">
+        <div id="topoLogo">
+            <picture>
+                <img id="logo" src="IMAGENS/barbeiro.png">
+            </picture>
+            <h1 id="nomeSite"><a href="./index.html">Barber</a></h1>
+        </div>
+        <div id="topoLinks">
+            <ul>
+                <li><a href="./agendamentos.html">Agendamentos</a></li>
+                <li><a href="#">Saiba Mais</a></li>
+                <li><a href="faleConosco.html">Fale Conosco</a></li>
+            </ul>
+        </div>
+
+        <div class="toggle">
+            <button class="menu-toggle" onclick=showMenu()>&#9776</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="toggle-Links">
+            <ul>
+                <li><a href="./agendamentos.html">Agendamentos</a></li>
+                <li><a href="#">Saiba Mais</a></li>
+                <li><a href="faleConosco.html">Fale Conosco</a></li>
+            </ul>
+        </div>
+
+
+        <div class="agendamentos">
+            <div class="conteudo">
+                <h2 class="title-agendamento">Vamos realizar um agendamento!?</h2>
+                <p class="text-agendamento">Na <b>Barber</b>, acreditamos que um corte de cabelo vai além de estilo, é
+                    uma experiência de renovação. Nossa equipe de profissionais talentosos está pronta para oferecer o
+                    melhor em cortes, barbas e tratamentos capilares, tudo em um ambiente acolhedor e sofisticado.
+                    Para garantir que você tenha uma experiência personalizada e sem espera, recomendamos agendar seu
+                    horário com antecedência. Assim, você pode escolher o horário mais conveniente e receber o
+                    atendimento exclusivo que merece.</p>
+            </div>
+
+
+            <div class="agendar">
+                <div class="nomeag">
+                    <label>Nome completo: </label>
+                    <input id="nomeag" type="text" placeholder="João">
+                </div>
+                <div class="dataag">
+                    <label>Data e hora: </label>
+                    <input id="dataag" type="datetime-local">
+                </div>
+                <div class="telefoneag">
+                    <label>Telefone: </label>
+                    <input id="telefoneag" type="text" placeholder="38999999999">
+                </div>
+            </div>
+
+
+            <div class="addAgendamento">
+                <button onclick="agendar()">Adicionar</button>
+            </div>
+        </div>
+
+
+    <div class="tabela">
+        <table class="tabela-corpo">
+            <thead>
+              <tr>
+                <th>Nome</th>
+                <th>Data</th>
+                <th>Telefone</th>
+              </tr>
+            </thead>
+            <tbody id="showAg">
+              
+            </tbody>
+          </table>
+    </div>
+    </main>
+
+
+    <footer id="rodape">
+        <p class="textRodape"><a href="index.html">Barber</a>
+            <a href="./agendamentos.html">Agendamentos</a>
+            <a href="#">Saiba Mais</a>
+            <a href="faleConosco.html">Fale Conosco</a>
+        </p>
+        <p id="fim">2024 - Barber - Todos os direitos reservados&COPY;</p>
+    </footer>
+
+
+
+
+    <script src="./agendamento.js" defer></script>
+    
+</body>
+
+</html>
