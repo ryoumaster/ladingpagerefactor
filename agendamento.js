@@ -104,6 +104,24 @@ function mostrarAgendamentos(agendamentos = Array()) {
         title.innerHTML = 'Agendamentos'
         const linha = document.createElement('hr')
 
+        const btn2 = document.createElement('button');
+        btn2.className = 'delete'
+        btn2.id = t.id;
+        btn2.innerHTML = 'Cancelar'
+        btn2.onclick = () => {
+            const id = t.id;
+            database1.cancelarAgenda(id)
+            window.location.reload()
+        }
+
+        const btnEdit2 = document.createElement('button');
+        btnEdit2.className = 'edit'
+        btnEdit2.id = t.id;
+        btnEdit2.innerHTML='Editar'
+        btnEdit2.onclick = () =>{
+            const id = t.id;
+            editarAgenda(id)
+        }
 
 
 
@@ -114,8 +132,8 @@ function mostrarAgendamentos(agendamentos = Array()) {
         divShow.appendChild(shownome)
         divShow.appendChild(showData)
         divShow.appendChild(showtel)
-        divShow.appendChild(btn)
-        divShow.appendChild(btnEdit)
+        divShow.appendChild(btn2)
+        divShow.appendChild(btnEdit2)
         divShow.appendChild(linha)
 
     })
